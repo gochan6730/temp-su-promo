@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Starfield</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="typing-demo" id="fir">
+      You're here... Finally
+    </div>
+    
+    <div class="typing-demo" style="font-size:5.7rem" id="sec" hidden>
+      Please support...
+    </div>
+    <div class="typing-demo" style="font-size:4.2rem" id="thi" hidden>
+      CDG nominated SU <strong>Virtus</strong>!
+    </div>
+</div>
+<script defer>
+setTimeout(function(){
+$("#fir").hide();
+$("#sec").show();
+setTimeout(function(){
+$("#sec").hide();
+$("#thi").show();
+setTimeout(function(){
+  window.location.replace('https://instagram.com/cdg_virtus2223');
+},2000);
+},4000);
+},4000);
+</script>
+<!-- partial:index.partial.html -->
+<canvas id='canvas'></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
